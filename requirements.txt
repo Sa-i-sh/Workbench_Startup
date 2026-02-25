@@ -1,0 +1,7 @@
+os
+time
+keyboard
+subprocess
+pyinstaller
+pynput
+python-dotenv
