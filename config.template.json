@@ -1,5 +1,20 @@
 {
-    "hotkey": ["Custome keys"],
-    "url": "https://example.com",
-    "launch_delay": 1
+    "shortcuts": [
+        {
+            "hotkey": ["Shortcut keys"],
+            "actions": [
+                {
+                    "type": "browser",
+                    "url": "https://example.com"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "app",
+                    "env_key": "APP_PATH"
+                }
+            ]
+        }
+    ],
+    "launch_delay": "Necessary Delay"
 }

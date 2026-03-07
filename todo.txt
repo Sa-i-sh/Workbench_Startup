@@ -1,7 +1,6 @@
 [x]-Running silently in background (no console)
 [x]-Run Automatically on Windows Startup
 [x]-No admin requirement
-[]-Runs as system tray app
 [x]-pyinstaller executable and use pynput instead of keyboard
 [x]-Add configuration file (JSON based)
-[]-Turn it into reusable productivity launcher
+[x]-Turn it into reusable productivity launcher
