@@ -7,11 +7,14 @@
                     "type": "browser",
                     "url": "https://example.com"
                 }
-            ],
-            "actions": [
+            ]
+        },
+        {
+            "hotkey":["Shortcut keys"],
+            "actions":[
                 {
                     "type": "app",
-                    "env_key": "APP_PATH"
+                    "url": "App_Path"
                 }
             ]
         }
