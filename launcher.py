@@ -1,6 +1,7 @@
 from pynput import keyboard
 import json
 import os
+import sys
 import subprocess
 import time
 from dotenv import load_dotenv
@@ -40,8 +41,15 @@ CTRL_CHAR_MAP = {
 }
 
 def load_config():
-    with open("config.json", "r") as file:
-        return json.load(file)
+    if getattr(sys, 'frozen', False):
+        base_path = os.path.dirname(sys.executable)
+    else:
+        base_path = os.path.dirname(__file__)
+
+    config_path = os.path.join(base_path, "config.json")
+
+    with open(config_path, "r") as f:
+        return json.load(f)
 
 
 def execute_actions(actions, delay):
